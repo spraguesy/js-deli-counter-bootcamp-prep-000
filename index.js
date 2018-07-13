@@ -11,7 +11,7 @@ function nowServing (line) {
     
     currentPatron = "There is nobody waiting to be served!"
   } else {
-    currentPatron = `Currently serving ${line.shift()}`
+    currentPatron = `Currently serving ${line.shift()}.`
   }
   
   return currentPatron
