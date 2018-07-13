@@ -8,9 +8,10 @@ function takeANumber (line, name) {
 function nowServing (line) {
   var currentPatron;
   if (line.length < 1) {
-    currentPatron = `Currently serving ${line.shift()}`
-  } else {
+    
     currentPatron = "There is nobody waiting to be served!"
+  } else {
+    currentPatron = `Currently serving ${line.shift()}`
   }
   
   return currentPatron
