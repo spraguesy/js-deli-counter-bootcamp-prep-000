@@ -11,5 +11,20 @@ function nowServing (line) {
 }
 
 function currentLine (line) {
+  var lineString = 'The line is currently:';
+  var nameString;
+  if (line.length < 1) {
+    lineString = "The ling ist currently empty."
+  } else {
+    for (var i = 0; i < line.length; i++) {
+      if (i === 0) {
+        nameString = `${i+1}. ${line[i]}`;
+      } else {
+        nameString = nameString + `, ${i+1} ${line[i]}`
+      }
+    }  
+  }
+  
+  return lineString
   
 }
