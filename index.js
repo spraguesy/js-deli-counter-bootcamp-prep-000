@@ -5,6 +5,11 @@ function takeANumber (line, name) {
   return line.length + 1
 }
 
-function nowServing () {
+function nowServing (line) {
+  var currentPatron = line.shift()
+  return currentPatron
+}
+
+function currentLine (line) {
   
 }
