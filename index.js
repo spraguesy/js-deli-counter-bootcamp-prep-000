@@ -22,8 +22,9 @@ function currentLine (line) {
       } else {
         nameString = nameString + `, ${i+1} ${line[i]}`
       }
-      lineString += nameString;
-    }  
+    } 
+    
+    lineString += nameString;
   }
   
   return lineString
